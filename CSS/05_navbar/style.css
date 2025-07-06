@@ -1,0 +1,141 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #1a1a1a;
+    color: whitesmoke;
+}
+
+.nav-container {
+    margin-bottom: 40px;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+.nav1 {
+    background-color: rgb(255, 255, 255);
+    padding: 10px;
+}
+
+.nav1 ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+}
+
+.nav1 li {
+    display: inline;
+}
+
+.nav1 a {
+    text-decoration: none;
+    color: rgb(33, 31, 31);
+    /* background-color:#d45b04; */
+    padding: 5px 15px;
+    position: relative;
+}
+
+.nav1 .login-btn {
+    background-color: rgb(0, 68, 255);
+    color: whitesmoke;
+    border: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.nav1 a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    left: 0;
+    background-color: blue;
+    transform: scaleY(0);
+    transition: transform 0.3s ease-in-out;
+
+}
+
+.nav1 a:hover::after {
+    transform: scaleX(1);
+}
+
+
+.nav2 {
+    background-color: green;
+    ;
+    width: 200px;
+    padding: 20px;
+}
+
+.nav2 ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav2 li {
+    margin-bottom: 12px;
+}
+
+.nav2 a {
+    text-decoration: none;
+    color: whitesmoke;
+    display: block;
+    padding: 10px;
+    width: 100%;
+}
+
+.nav2 a:hover {
+    background-color: rgb(107, 255, 78);
+}
+
+.nav2 .login-btn {
+    background-color: #048a2f;
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* .nav2 .login-btn:hover {
+ background-color: #057017;
+} */
+
+
+.nav3 {
+    background-color: #5cbec7;
+    padding: 10px;
+}
+
+.nav3 ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav3 a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px;
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+}
+
+
+.nav3 .dropdown:hover .dropdown-content {
+    display: block;
+    position: absolute;
+    background-color: #3b3b3b;
+}
