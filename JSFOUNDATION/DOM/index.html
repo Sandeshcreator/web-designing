@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript DOM Fun Examples</title>
+    <style>
+        body {
+            background-color: #1e1e1e;
+            color: white;
+            text-align: center;
+            font-family: Georgia, serif;
+            margin: 0;
+            padding: 30px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-top: 40px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 1.1rem;
+        }
+
+        button {
+            margin: 10px 0;
+            padding: 8px 15px;
+            font-size: 1rem;
+            cursor: pointer;
+            border: none;
+            border-radius: 4px;
+            background-color: #ddd;
+        }
+
+        ul,
+        ol {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 5px 0;
+        }
+
+        .hightlight {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h1>JavaScript DOM Fun Examples</h1>
+
+    <h2>Accessing DOM Elements</h2>
+    <p id="demoText">This is a paragraph. Click the button to change me!</p>
+    <button id="changeTextButton">Change Text</button>
+
+    <section id="example-2">
+        <h2>Traversing the DOM</h2>
+        <ul id="citiesList">
+            <li>New York</li>
+            <li>Tokyo</li>
+            <li>Paris</li>
+            <li>London</li>
+        </ul>
+        <button id="highlightFirstCity">Highlight First City</button>
+    </section>
+
+    <h2>Manipulating DOM Elements</h2>
+    <p id="orderText">Order: Latte</p>
+    <button onclick="document.getElementById('orderText').textContent = 'Order: Espresso'">Change Order to
+        Espresso</button>
+
+    <h2>Creating and Inserting Elements</h2>
+    <button onclick="addItem()">Add a New Item to the Shopping List</button>
+    <ul id="shoppingList">
+        <li>Bread</li>
+        <li>Milk</li>
+    </ul>
+
+    <h2>Removing DOM Elements</h2>
+    <ul id="taskList">
+        <li>Task 1</li>
+        <li>Task 2</li>
+        <li>Task 3</li>
+    </ul>
+    <button onclick="removeLastTask()">Remove Last Task</button>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
