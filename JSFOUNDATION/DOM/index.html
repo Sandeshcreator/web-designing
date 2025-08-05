@@ -76,25 +76,31 @@
         <button id="highlightFirstCity">Highlight First City</button>
     </section>
 
-    <h2>Manipulating DOM Elements</h2>
-    <p id="orderText">Order: Latte</p>
-    <button onclick="document.getElementById('orderText').textContent = 'Order: Espresso'">Change Order to
-        Espresso</button>
+    <section id="example-3">
+        <h2>Manipulating DOM Elements</h2>
+        <div id="coffeeOrder">Order: <span id="coffeeType">Latte</span></div>
+        <button id="changeOrder">Change Order to
+            Espresso</button>
+    </section>
 
-    <h2>Creating and Inserting Elements</h2>
-    <button onclick="addItem()">Add a New Item to the Shopping List</button>
-    <ul id="shoppingList">
-        <li>Bread</li>
-        <li>Milk</li>
-    </ul>
+    <section id="example-4">
+        <h2>Creating and Inserting Elements</h2>
+        <button id="addNewItem">Add a New Item to the Shopping List</button>
+        <ul id="shoppingList">
+            <li>Bread</li>
+            <li>Milk</li>
+        </ul>
+    </section>
 
-    <h2>Removing DOM Elements</h2>
-    <ul id="taskList">
-        <li>Task 1</li>
-        <li>Task 2</li>
-        <li>Task 3</li>
-    </ul>
-    <button onclick="removeLastTask()">Remove Last Task</button>
+    <section id="example-5">
+        <h2>Removing DOM Elements</h2>
+        <ul id="taskList">
+            <li>Task 1</li>
+            <li>Task 2</li>
+            <li>Task 3</li>
+        </ul>
+        <button id="removeLastTask">Remove Last Task</button>
+    </section>
 
     <script src="./script.js"></script>
 </body>
