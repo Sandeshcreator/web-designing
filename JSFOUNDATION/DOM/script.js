@@ -30,8 +30,7 @@ document.getElementById("addNewItem").addEventListener("click", function () {
   document.getElementById("shoppingList").appendChild(newItem);
 });
 
-//example 
-
+//example 5
 document
   .getElementById("removeLastTask")
   .addEventListener("click", function () {
