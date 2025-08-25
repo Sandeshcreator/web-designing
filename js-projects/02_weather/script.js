@@ -6,20 +6,25 @@ document.addEventListener("DOMContentLoaded", () => {
   const temperatureDisplay = document.getElementById("temperature");
   const errorMessage = document.getElementById("error-message");
 
-  getWeatherBtn.addEventListener("click", () => {
+  getWeatherBtn.addEventListener("click", async () => {
     const city = cityInput.value.trim();
     if (!city) {
       return;
+    }
 
-
+    try {
+      const weatherData = await fetchWeatherData(city);
+      displayWeatherData(weatherData);
+    } catch (error) {
+      showError();
     }
   });
 
-  function fetchWeatherData(city) {
+  async function fetchWeatherData(city) {
     // gets the data
   }
 
-  function name(weatherData) {
+  function displayWeatherData(weatherData) {
     //display
   }
 
